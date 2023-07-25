@@ -1,0 +1,1 @@
+// tutaj ma się znajdować informacja o evencie - godzina, data, nazwa eventu

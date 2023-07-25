@@ -1,0 +1,1 @@
+//ten przycisk otrzymuje informacje do jakiej strony ma przenieść usera po jego kliknięci

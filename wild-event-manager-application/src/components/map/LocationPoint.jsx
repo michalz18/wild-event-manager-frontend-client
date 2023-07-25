@@ -1,0 +1,1 @@
+//ten komponent znajduje się wewnątrz mapy - jest to jedna konkretna lokacja, jest kółkiem i ma link
