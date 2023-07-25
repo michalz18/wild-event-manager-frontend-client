@@ -1,10 +1,14 @@
 // tutaj będzie się znajdować głębszy opis eventu
-import React from "react";
 
-const Event = () => {
+
+const Event = ({ event }) => {
+
     return (
         <div>
-            This is event
+            <h2>Title: {event.title}</h2>
+            <p>Date:{event.startsAt}  to: {event.endsAt}</p>
+            <p>Description: {event.description} </p>
+            <p>Location: </p>
         </div>
     )
 }
