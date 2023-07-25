@@ -1,1 +1,1 @@
-//todo
+import 'dotenv/config';
