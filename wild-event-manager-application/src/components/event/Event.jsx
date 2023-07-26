@@ -8,7 +8,7 @@ const Event = ({ event }) => {
             <h2>Title: {event.title}</h2>
             <p>Date:{event.startsAt}  to: {event.endsAt}</p>
             <p>Description: {event.description} </p>
-            <p>Location: </p>
+            <p>Location: {event.location} </p>
         </div>
     )
 }
