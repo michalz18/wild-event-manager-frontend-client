@@ -1,6 +1,5 @@
-//todo
 const getLocations = async () => {
-    const url = 'http://localhost:8080/location'
+    const url = `${process.env.REACT_APP_GET_LOCATIONS}`;
     const response = await fetch(url);
     if (!response.ok) {
         throw Error('Failed to deleated todo item!')

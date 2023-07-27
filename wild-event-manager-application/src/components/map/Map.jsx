@@ -26,15 +26,14 @@ const Map = () => {
 
   return (
     <div>
-      {imageSource && locationPoints 
+      {imageSource && locationPoints
         ? <div>
             <img src={imageSource} alt="Map_of_event" />
             <div>
             {locationPoints.map((location) => (
             <Link to={`/location/${location.id}`}>
-                <LocationPoint locationPoint={location}></LocationPoint>
+                <LocationPoint key={location.id} locationPoint={location}></LocationPoint>
             </Link>))}
-
             </div>
         </div>
         : <p>Loading...</p>}
