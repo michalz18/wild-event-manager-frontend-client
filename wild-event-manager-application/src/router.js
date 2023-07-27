@@ -1,9 +1,9 @@
-import Layout from './pages/Layout';
-import ErrorPage from './pages/Layout';
-import MapPage from './pages/MapPage';
-import EventsPage from './pages/EventsPage';
-import EventPage from './pages/EventPage';
-import LocationPage from './pages/LocationPage';
+import Layout from './pages/Layout.jsx';
+import ErrorPage from './pages/Layout.jsx';
+import MapPage from './pages/MapPage.jsx';
+import EventsPage from './pages/EventsPage.jsx';
+import EventPage from './pages/EventPage.jsx';
+import LocationPage from './pages/LocationPage.jsx';
 import { createBrowserRouter } from "react-router-dom";
 
 

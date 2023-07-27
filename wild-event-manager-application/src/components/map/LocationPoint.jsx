@@ -1,1 +1,12 @@
-//ten komponent znajduje się wewnątrz mapy - jest to jedna konkretna lokacja, jest kółkiem i ma link
+const LocationPoint = ({ locationPoint }) => {
+
+    return (
+        <div>
+            <h2>Id: {locationPoint.id}</h2>
+            <p>CoorX:{locationPoint.coordinateX}</p>
+            <p>CoorY:{locationPoint.coordinateY}</p>
+        </div>
+    )
+}
+
+export default LocationPoint;
