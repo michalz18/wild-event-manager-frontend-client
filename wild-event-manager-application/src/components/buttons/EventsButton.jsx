@@ -1,10 +1,12 @@
-//ten przycisk ma odpowiadać za przekierowanie na odpowiednią stronę na której są wylistowane nadchodzące wydarzenia
 import React from "react";
+import { Link } from "react-router-dom"
 
 const EventsButton = () => {
     return (
         <div>
-           <button type="button">This is Events Button</button>
+            <Link to="/events">
+                <button type="button">This is Events Button</button>
+            </Link>
         </div>
     )
 }

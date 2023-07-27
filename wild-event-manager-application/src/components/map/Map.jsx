@@ -30,10 +30,8 @@ const Map = () => {
         ? <div>
             <img src={imageSource} alt="Map_of_event" />
             <div>
-            {locationPoints.map((location) => (
-            <Link to={`/location/${location.id}`}>
-                <LocationPoint key={location.id} locationPoint={location}></LocationPoint>
-            </Link>))}
+            {locationPoints.map((location, key) => (
+            <LocationPoint key={key} locationPoint={location}></LocationPoint>
             </div>
         </div>
         : <p>Loading...</p>}
