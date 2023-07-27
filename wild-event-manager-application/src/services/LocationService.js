@@ -1,7 +1,15 @@
 const API_URL = "http://localhost:8080"
 
-const fetchLocationById = async id => {
-	
+const getLocations = async () => {
+    const url = `${process.env.REACT_APP_GET_LOCATIONS}`;
+    const response = await fetch(url);
+    if (!response.ok) {
+        throw Error('Failed to deleated todo item!')
+    }
+    return await response.json()
+  }
+
+const fetchLocationById = async (id) => {
 	try {
 		const response = await fetch(`${API_URL}/location/${id}`)
 		if (!response.ok) {
@@ -14,4 +22,9 @@ const fetchLocationById = async id => {
 	}
 }
 
-export default fetchLocationById;
+export {getLocations, fetchLocationById};
+
+
+
+
+
