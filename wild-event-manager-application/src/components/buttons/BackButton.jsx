@@ -1,1 +1,14 @@
-//ten przycisk otrzymuje informacje do jakiej strony ma przenieść usera po jego kliknięci
+import React from "react";
+import { Link } from "react-router-dom"
+
+const BackButton = () => {
+    return (
+        <div>
+            <Link to="/">
+                <button type="button">Back button</button>
+            </Link>
+        </div>
+    )
+}
+
+export default BackButton;
