@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import fetchLocationById from "../services/LocationService";
+import { fetchLocationById } from "../services/LocationService";
 import LoadingPage from "../components/LoadingPage";
 import Location from "../components/location/Location";
 
