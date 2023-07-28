@@ -1,27 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import Event from '../components/event/Event'
 import { useParams } from 'react-router-dom';
+import { getEventById } from '../services/EventService';
+import BackButton from '../components/buttons/BackButton';
 
 
 const EventPage = () => {
     const { id } = useParams();
     const [event, setEvent] = useState(null);
-    const PATH = 'event/';
-
-    const getUrl = () => {
-        return `${process.env.REACT_APP_BACKEND_URL}${PATH}${id}`;
-    }
-    const fetchEvent = async () => {
-        const response = await fetch(getUrl());
-        if (!response.ok) {
-            throw Error('Failed to fetch the event!');
-        }
-        const data = await response.json();
-        setEvent(data);
-    }
 
     useEffect(() => {
-        fetchEvent();
+        const getEvent = async () => {
+            try {
+                const data = await getEventById(id);
+                setEvent(data);
+            } catch (error) {
+                console.error("Failed to get event")
+            }
+        }
+        getEvent();
     }, [id]);
 
     return (
@@ -29,6 +26,7 @@ const EventPage = () => {
             {event && (
                 <Event event={event} />
             )}
+            <BackButton></BackButton>
         </div>
     )
 }

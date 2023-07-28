@@ -1,10 +1,18 @@
 import React from "react";
+import EventTitle from "../event/EventTitle";
 
-const Location = ({ title, description }) => {
+const Location = ({location}) => {
   return (
     <div className="location">
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <h2>{location.title}</h2>
+      <p>{location.description}</p>
+      {location.eventTitles.map((event, key) => (
+                <EventTitle
+                    key={key}
+                    event={event}
+                    showLocation={false}
+                />
+            ))}
     </div>
   );
 };

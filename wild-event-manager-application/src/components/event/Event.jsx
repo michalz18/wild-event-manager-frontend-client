@@ -1,6 +1,3 @@
-// tutaj będzie się znajdować głębszy opis eventu
-
-
 const Event = ({ event }) => {
 
     return (

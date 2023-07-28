@@ -5,8 +5,8 @@ import EventsButton from '../components/buttons/EventsButton'
 const MapPage = () => {
     return (
         <div>
-            <Map />
             <EventsButton />
+            <Map />
         </div>
     )
 }
