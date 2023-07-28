@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchLocationById } from "../services/LocationService";
 import LoadingPage from "../components/LoadingPage";
 import Location from "../components/location/Location";
+import BackButton from "../components/buttons/BackButton";
 
 const LocationPage = () => {
 	const { id } = useParams()
@@ -25,6 +26,9 @@ const LocationPage = () => {
 		return <LoadingPage />
 	}
 
-	return <Location title={location.title} description={location.description} />
+	return <div>
+			<Location location={location} />
+			<BackButton></BackButton>
+		</div>
 }
 export default LocationPage

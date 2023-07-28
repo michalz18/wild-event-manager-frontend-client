@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const EventTitle = ({ title, startsAt, location }) => (
+const EventTitle = ({ event, showLocation }) => (
     <div>
-        <span>{title}</span>
-        <span>Starts At: {new Date(startsAt).toLocaleString()}</span>
-        <span>Location: {location}</span>
+        <Link to={`/event/${event.eventId}`}>
+        <span>{event.title}</span>
+        <span>Starts At: {new Date(event.startsAt).toLocaleString()}</span>
+        {showLocation && <span>Location: {event.location}</span>}
+        </Link>
     </div>
 );
 
