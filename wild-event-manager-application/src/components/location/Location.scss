@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.location {
+	background-color: $location-background;
+	
+  &:hover {
+		transform: $transition;
+	}
+}
+
+.location:hover {
+	transform: $transition;
+}
+
+@include breakpoint(large-desktop) {
+	.location {
+		font-size: 3rem;
+	}
+}

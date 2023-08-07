@@ -1,5 +1,6 @@
 import React from "react";
 import EventTitle from "../event/EventTitle";
+import "./Location.scss";
 
 const Location = ({location}) => {
   return (
