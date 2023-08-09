@@ -1,0 +1,15 @@
+@import "../../../styles/mixins";
+
+.BackButton{
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-button{
+  @include back-button;
+  &:hover{
+    @include back-button-hover;
+  }
+}

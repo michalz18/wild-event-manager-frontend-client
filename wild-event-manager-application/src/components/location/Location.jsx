@@ -4,7 +4,7 @@ import EventTitle from "../event/EventTitle";
 const Location = ({location}) => {
   return (
     <div className="location">
-      <h2>{location.title}</h2>
+      <h2 className="title-location">{location.title}</h2>
       <p>{location.description}</p>
       {location.eventTitles.map((event, key) => (
                 <EventTitle

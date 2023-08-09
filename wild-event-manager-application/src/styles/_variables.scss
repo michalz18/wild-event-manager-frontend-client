@@ -1,0 +1,22 @@
+//FONT
+$primary-font: 'PT Sans', sans-seri;
+$secondary-font: 'PT Serif', serif;
+
+//COLOR VARIABLES (ONLY FOR CHANGE, NOT FOR USE IN MODULES
+$primary-color: #0A2E36;
+$secondary-color: #27FB6B;
+$white-color: #ffffff;
+
+//VARIABLES FOR MODULES
+$site-background: $primary-color;
+$title-color: $secondary-color;
+$title-font: $primary-font;
+$description-color: $white-color;
+$description-font: $secondary-font;
+$back-button-background: $secondary-color;
+$back-button-background-hover: $white-color;
+$arrow-color: $white-color;
+$back-button-arrow-color-hover: $secondary-color;
+
+//TRANSITION
+$transition: background-color .6s ease;
