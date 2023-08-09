@@ -1,6 +1,6 @@
-import React from "react"
-import Events from "../../components/event/Events"
-import BackButton from "../../components/buttons/BackButton"
+import React from "react";
+import Events from "../../components/event/Events";
+import BackButton from "../../components/buttons//backButton/BackButton";
 
 const EventsPage = () => {
 	return (

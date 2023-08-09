@@ -11,5 +11,19 @@ html {
 }
 
 body {
+	font-size: 1.4rem;
+	font-family: $description-font;
+	color: $description-color;
+	background-color: $site-background;
+}
+
+h2{
+	margin-top: 2em;
+	padding-bottom: 2em;
+	font-family: $title-font;
 	font-size: 1.6rem;
+	color: $title-color;
+	text-align: center;
+	text-transform: uppercase;
+	
 }

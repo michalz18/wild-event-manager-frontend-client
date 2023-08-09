@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { fetchLocationById } from "../../services/LocationService"
-import LoadingPage from "../loadingpage/LoadingPage"
-import Location from "../../components/location/Location"
-import BackButton from "../../components/buttons/BackButton"
+import { fetchLocationById } from "../../services/LocationService";
+import LoadingPage from "../loadingpage/LoadingPage";
+import Location from "../../components/location/Location";
+import BackButton from "../../components/buttons/backButton/BackButton";
 
 const LocationPage = () => {
 	const { id } = useParams()

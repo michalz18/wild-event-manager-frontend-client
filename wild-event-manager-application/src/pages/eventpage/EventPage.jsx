@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react"
-import Event from "../../components/event/Event"
-import { useParams } from "react-router-dom"
-import { getEventById } from "../../services/EventService"
-import BackButton from "../../components/buttons/BackButton"
+import React, { useState, useEffect } from "react";
+import Event from "../../components/event/Event";
+import { useParams } from "react-router-dom";
+import { getEventById } from "../../services/EventService";
+import BackButton from "../../components/buttons/backButton/BackButton";
 
 const EventPage = () => {
 	const { id } = useParams()
