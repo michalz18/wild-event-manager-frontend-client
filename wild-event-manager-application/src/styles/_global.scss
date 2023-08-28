@@ -17,13 +17,25 @@ body {
 	background-color: $site-background;
 }
 
-h2{
-	margin-top: 2em;
-	padding-bottom: 2em;
+h2 {
+	padding: 1em 0;
 	font-family: $title-font;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 	color: $title-color;
 	text-align: center;
 	text-transform: uppercase;
-	
+	font-weight: bold;
+	letter-spacing: 0.6rem;
+}
+
+h3 {
+	margin-top: 1em;
+	padding-bottom: 2em;
+	font-family: $title-font;
+	font-size: 1.4rem;
+	color: $subtitle-color;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.2rem;
 }
