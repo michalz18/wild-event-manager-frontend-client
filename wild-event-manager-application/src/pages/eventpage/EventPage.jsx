@@ -21,7 +21,7 @@ const EventPage = () => {
 	}, [id])
 
 	return (
-		<div>
+		<div className="mx-5">
 			{event && <Event event={event} />}
 			<BackButton></BackButton>
 		</div>

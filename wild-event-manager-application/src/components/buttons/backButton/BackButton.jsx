@@ -1,17 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./BackButton.scss";
+import React from "react"
+import { useNavigate } from "react-router-dom"
+import "./BackButton.scss"
 
 const BackButton = () => {
-    return (
-        <div className="BackButton">
-            <Link to="/">
-                <button className="back-button" type="button">
-                <i className="icon bi bi-skip-backward-fill"></i>
-                    </button>
-            </Link>
-        </div>
-    )
+	const navigate = useNavigate()
+
+	const handleBackClick = () => {
+		navigate(-1);
+	}
+	return (
+		<div className='BackButton'>
+			<button className='back-button' type='button' onClick={handleBackClick}>
+				<i className='icon bi bi-skip-backward-fill'></i>
+			</button>
+		</div>
+	)
 }
 
-export default BackButton;
+export default BackButton

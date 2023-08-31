@@ -1,3 +1,5 @@
+@import "../styles/mixins";
+
 *,
 *::before,
 *::after {
@@ -14,7 +16,15 @@ body {
 	font-size: 1.4rem;
 	font-family: $description-font;
 	color: $description-color;
-	background-color: $site-background;
+	background: $primary-color ($background-image) no-repeat center center fixed;
+	background-size: cover;
+	@include breakpoint(tablet){
+		font-size: 1.6rem;
+	}
+	@include breakpoint(desktop){
+		font-size: 1.8rem;
+	}
+
 }
 
 h2 {
@@ -26,16 +36,28 @@ h2 {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.6rem;
+	@include breakpoint(tablet){
+		font-size: 2rem;
+	}
+	@include breakpoint(desktop){
+		font-size: 2.2rem;
+	}
 }
 
 h3 {
 	margin-top: 1em;
 	padding-bottom: 2em;
 	font-family: $title-font;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	color: $subtitle-color;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 0.2rem;
+	@include breakpoint(tablet){
+		font-size: 2rem;
+	}
+	@include breakpoint(desktop){
+		font-size: 2.4rem;
+	}
 }
