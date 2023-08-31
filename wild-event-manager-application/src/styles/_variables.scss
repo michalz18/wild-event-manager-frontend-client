@@ -6,9 +6,10 @@ $secondary-font: 'PT Serif', serif;
 $primary-color: #0A2E36;
 $secondary-color: #27FB6B;
 $white-color: #ffffff;
+$background-image: url('../assets/bgi.png');
 
 //VARIABLES FOR MODULES
-$site-background: $primary-color;
+$site-background: $background-image;
 $title-color: $primary-color;
 $title-font: $primary-font;
 $subtitle-color: $secondary-color;
@@ -18,6 +19,10 @@ $back-button-background: $secondary-color;
 $back-button-background-hover: $white-color;
 $arrow-color: $white-color;
 $back-button-arrow-color-hover: $secondary-color;
+$arrow-carousel-color: $secondary-color;
 
 //TRANSITION
 $transition: background-color .6s ease;
+
+//CENTERED
+$component-centered: 25vh;

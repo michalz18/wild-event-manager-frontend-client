@@ -31,8 +31,8 @@
 
 //BUTTON
 @mixin back-button {
-	width: 60px;
-	height: 60px;
+	width: 40px;
+	height: 40px;
 	display: flex;
 	position: relative;
 	align-items: center;
@@ -43,8 +43,19 @@
   border: none;
 	border-radius: 50%;
   text-align: center; 
-	font-size: 3.5rem;
+	font-size: 2.5rem;
 	transition: $transition;
+	@include breakpoint(tablet){
+		width: 50px;
+		height: 50px;
+		font-size: 2.8rem;
+	}
+	@include breakpoint(desktop){
+		width: 60px;
+		height: 60px;
+		font-size: 3.4rem;
+	}
+
 }
 
 @mixin back-button-hover{

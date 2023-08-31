@@ -1,18 +1,12 @@
-@import "../../styles/variables";
 @import "../../styles/mixins";
 
-.event-position {
-	margin-top: $component-centered;
+.carousel-centered {
+	margin-top: 15vh;
 	@include breakpoint(desktop) {
+		width: 800px;
 		display: flex;
 		justify-content: center;
 		margin-left: auto;
 		margin-right: auto;
-	}
-}
-
-.size-card {
-	@include breakpoint(desktop) {
-		width: 1400px;
 	}
 }
