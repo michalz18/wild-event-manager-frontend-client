@@ -1,13 +1,18 @@
-import React from "react"
+import React, { useEffect, useState } from "react";
 import Map from "../../components/map/Map"
-import EventsButton from "../../components/buttons/EventsButton"
+import EventsButton from "../../components/buttons/EventsButton";
+
+
 
 const MapPage = () => {
-	return (
+  	return (
 		<div>
-			<EventsButton />
-			<Map />
+			<EventsButton/>
+			<Map/>
 		</div>
+		
+			
+		
 	)
 }
 
