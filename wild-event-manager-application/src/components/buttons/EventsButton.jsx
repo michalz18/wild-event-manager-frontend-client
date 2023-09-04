@@ -3,11 +3,11 @@ import { Link } from "react-router-dom"
 
 const EventsButton = () => {
     return (
-        <div>
-            <Link to="/events">
-                <button type="button">This is Events Button</button>
-            </Link>
-        </div>
+        <Link to={'/events'}>
+        <button type="button" style={{ zIndex: 4, position: 'absolute' }}>
+            This is Events Button
+        </button>
+        </Link>
     )
 }
 
