@@ -30,7 +30,7 @@ const Map = () => {
       const map = new mapboxgl.Map({
       container: mapContainerRef.current,
       style: 'mapbox://styles/mapbox/streets-v9',
-      center: [mapData.coordinate.latitude, mapData.coordinate.longitude],
+      center: [mapData.coordinate.longitude, mapData.coordinate.latitude],
       zoom: mapData.zoom,
       bearing: mapData.bearing
     }, []);
